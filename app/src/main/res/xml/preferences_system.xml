@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            app:key="system_settings"
+            android:layout="@layout/preferences_title"
+            app:title="System settings">
+
+        <SwitchPreferenceCompat
+                app:key="@string/preftag_debug"
+                app:title="Enable debug mode (for developers)"
+                app:defaultValue="@bool/default_debug"/>
+        <SwitchPreferenceCompat
+                app:key="@string/preftag_bluetooth"
+                app:title="Enable bluetooth/reward system"
+                app:defaultValue="@bool/default_bluetooth"/>
+        <SwitchPreferenceCompat
+                app:key="@string/preftag_camera"
+                app:title="Enable camera"
+                app:defaultValue="@bool/default_camera"/>
+        <SwitchPreferenceCompat
+                app:key="@string/preftag_facerecog"
+                app:title="Enable facial recognition"
+                app:defaultValue="@bool/default_facerecog"/>
+        <SwitchPreferenceCompat
+                app:key="@string/preftag_restartoncrash"
+                app:title="Automatically restart task on crash"
+                app:defaultValue="@bool/default_restartoncrash"/>
+        <SwitchPreferenceCompat
+                app:key="@string/preftag_sound"
+                app:title="Enable sounds"
+                android:summary="Device will beep on successful trials to aid secondary reinforcement"
+                app:defaultValue="@bool/default_sound"/>
+
+        <Preference
+                app:fragment="mymou.preferences.PrefsFragSoundPicker"
+                app:key="soundpicker_prefsfrag"
+                app:title="Choose sound for secondary reinforcer"/>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

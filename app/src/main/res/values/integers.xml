@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_num_monkeys">1</integer>
+    <integer name="max_num_monkeys">8</integer>
+    <integer name="min_num_monkeys">1</integer>
+
+    <integer name="num_error_messages">10</integer>
+    <integer name="i_bt_couldnt_connect">0</integer>
+    <integer name="i_bt_disabled">1</integer>
+
+    <integer name="default_autostart_hour">7</integer>
+    <integer name="default_autostop_hour">19</integer>
+
+    <integer name="default_camera_to_use">0</integer>
+    <integer name="TAG_CAMERA_FRONT">0</integer>
+    <integer name="TAG_CAMERA_REAR">1</integer>
+    <integer name="TAG_CAMERA_EXTERNAL">2</integer>
+
+    <integer name="default_num_rew_chans">4</integer>
+    <integer name="default_rew_chan">1</integer>
+    <integer name="max_num_rew_chans">4</integer>
+
+    <integer name="default_rewardduration">1500</integer>
+    <integer name="default_timeoutduration">1500</integer>
+    <integer name="default_responseduration">20</integer>
+    <integer name="max_responseduration">60</integer>
+    <integer name="max_rewardtimeoutduration">10000</integer>
+
+
+    <integer name="default_taskbackgroundcolour">0</integer>
+    <integer name="default_rewardbackgroundcolour">14</integer>
+    <integer name="default_timeoutbackgroundcolour">6</integer>
+    <integer name="default_dimscreenamount">6</integer>
+    <integer name="default_dimscreentime">10</integer>
+    <integer name="default_bordercolour">1</integer>
+
+    <integer name="default_bordersize">20</integer>
+    <integer name="default_cuesize">300</integer>
+    <integer name="default_cuespacing">30</integer>
+
+    <integer name="default_objdisc_num_corr_shown">2</integer>
+    <integer name="default_objdisc_num_incorr_shown">2</integer>
+    <integer name="default_objdisc_num_steps">2</integer>
+
+    <integer name="default_dm_map">1</integer>
+    <integer name="default_dm_min_start_distance">2</integer>
+    <integer name="default_dm_max_start_distance">3</integer>
+    <integer name="default_dm_num_extra_steps">0</integer>
+    <integer name="default_dm_choice_delay">400</integer>
+    <integer name="default_dm_animation_duration">450</integer>
+    <integer name="default_dm_dist_to_target">0</integer>
+    <integer name="default_dm_target_switch_freq">100</integer>
+    <integer name="default_dm_booster_amount">500</integer>
+
+    <integer name="default_t_one_num_presses">1</integer>
+    <integer name="default_t_one_screen_colour">6</integer>
+
+    <integer name="default_random_reward_start">20</integer>
+    <integer name="default_random_reward_stop">40</integer>
+
+    <integer name="default_sl_map_selected">0</integer>
+    <integer name="default_sl_seq_length">7</integer>
+
+    <integer name="default_dvs_feedback_duration">5000</integer>
+
+
+    <integer name="default_pr_cue_colour">6</integer>
+    <integer name="default_pr_animation_duration">450</integer>
+
+    <integer name="default_ea_num_steps">8</integer>
+    <integer name="default_ea_step_duration_on">600</integer>
+    <integer name="default_ea_step_duration_off">500</integer>
+    <integer name="default_ea_distance">3</integer>
+    <integer name="default_ea_variance">1</integer>
+
+    <integer name="default_sr_num_stimuli">1</integer>
+    <integer name="default_sr_locations">2</integer>
+    <integer name="default_sr_duration_on">800</integer>
+    <integer name="default_sr_duration_off">1500</integer>
+    
+    <integer name="default_od_num_distractors">3</integer>
+    <integer name="default_od_duration_on">750</integer>
+    <integer name="default_od_duration_off">1500</integer>
+
+    <integer name="default_rdm_num_dots">390</integer>
+    <integer name="default_rdm_dot_size">30</integer>
+    <integer name="default_rdm_coherence_min">25</integer>
+    <integer name="default_rdm_coherence_max">50</integer>
+    <integer name="default_rdm_dist_min">50</integer>
+    <integer name="default_rdm_dist_max">100</integer>
+    <integer name="default_rdm_movie_length">2000</integer>
+    <integer name="default_rdm_choice_delay">200</integer>
+    <integer name="default_rdm_color_bg">1</integer>
+    <integer name="default_rdm_color_dots">0</integer>
+    <integer name="default_rdm_color_choice">1</integer>
+    <integer name="shrinkScaling">10</integer>
+
+
+</resources>

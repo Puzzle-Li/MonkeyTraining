@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@android:color/transparent">
+
+    <Button
+            android:text="Monkey 0\n Cue 1"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:textSize="30sp"
+            android:id="@+id/buttonCue1MonkO"/>
+
+    <Button
+            android:text="Monkey 1\n Cue 1"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:textSize="30sp"
+            android:id="@+id/buttonCue1MonkV"/>
+
+    <Button
+            android:text="Monkey 0\n Cue 2"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:textSize="30sp"
+            android:id="@+id/buttonCue2MonkO"/>
+
+    <Button
+            android:text="Monkey 1\n Cue 2"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:textSize="30sp"
+            android:id="@+id/buttonCue2MonkV"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

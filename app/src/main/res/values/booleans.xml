@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="default_debug">false</bool>
+    <bool name="default_bluetooth">false</bool>
+    <bool name="default_camera">true</bool>
+    <bool name="default_facerecog">false</bool>
+    <bool name="default_savefacerecogarrays">false</bool>
+    <bool name="default_dimscreen">false</bool>
+    <bool name="default_restartoncrash">true</bool>
+    <bool name="default_sound">true</bool>
+    <bool name="default_autostart">false</bool>
+    <bool name="default_autostop">false</bool>
+
+    <bool name="default_objdisc_repeaterror">false</bool>
+    <bool name="default_objdisc_previouserror">false</bool>
+    <bool name="default_dm_errors_allowed">false</bool>
+    <bool name="default_dm_static_reward">false</bool>
+    <bool name="default_dm_extra_step_timout">false</bool>
+    <bool name="default_dm_use_progress_bar">true</bool>
+    <bool name="default_dm_repeat_error">true</bool>
+
+    <bool name="default_t_one_skip_go_cue">true</bool>
+
+    <bool name="default_dvs_randomly_place_options">true</bool>
+    <bool name="default_dvs_give_full_map">true</bool>
+
+    <bool name="default_pr_skip_go_cue">true</bool>
+    <bool name="default_pr_progress_bar">true</bool>
+
+    <bool name="default_rdm_horizontal">false</bool>
+
+</resources>

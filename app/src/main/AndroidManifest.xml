@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="mymou">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+            tools:ignore="ProtectedPermissions" />
+
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.usb.host"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="Mymou"
+            tools:replace="android:label"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity
+                android:name=".MainMenu"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".task.backend.DataViewer">
+        </activity>
+
+        <activity
+                android:name=".preferences.PrefsActSystem"
+                android:theme="@style/MainAppTheme">
+        </activity>
+
+        <activity
+                android:name=".task.backend.TaskManager"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".preferences.PrefsActCropPicker"/>
+
+        <activity android:name=".preferences.PrefsActCamPicker"/>
+
+        <activity android:name=".SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/MainAppTheme">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".task.backend.CameraExternal"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
+
