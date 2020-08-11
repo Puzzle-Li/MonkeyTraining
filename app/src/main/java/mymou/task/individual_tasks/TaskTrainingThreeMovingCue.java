@@ -57,6 +57,8 @@ public class TaskTrainingThreeMovingCue extends Task {
 
         assignObjects();
 
+        touchPrevention(view, callback);
+
     }
 
     private void assignObjects() {

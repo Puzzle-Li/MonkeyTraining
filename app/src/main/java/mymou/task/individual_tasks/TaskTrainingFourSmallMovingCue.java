@@ -52,9 +52,11 @@ public class TaskTrainingFourSmallMovingCue extends Task {
 
         assignObjects();
 
+        touchPrevention(view, callback);
+
         positionCue();
 
-        randomRewardTimer(0);
+//        randomRewardTimer(0);
 
     }
 
@@ -131,33 +133,35 @@ public class TaskTrainingFourSmallMovingCue extends Task {
             h0.removeCallbacksAndMessages(null);
 
 
-            // Reset timer for idle timeout on each press
-            callback.resetTimer_();
-
-            // Take photo of subject
-            callback.takePhotoFromTask_();
-
-            // Reward subject
-            callback.giveRewardFromTask_(prefManager.rewardduration);
-
+//            // Reset timer for idle timeout on each press
+//            callback.resetTimer_();
+//
+//            // Take photo of subject
+//            callback.takePhotoFromTask_();
+//
+//            // Reward subject
+//            callback.giveRewardFromTask_(prefManager.rewardduration);
+//
             // Log press
             callback.logEvent_(prefManager.ec_correct_trial);
+//
+//            // We have to commit the event as well as the trial never actually ends
+//            callback.commitTrialDataFromTask_(prefManager.ec_correct_trial);
 
-            // We have to commit the event as well as the trial never actually ends 
-            callback.commitTrialDataFromTask_(prefManager.ec_correct_trial);
+            endOfTrial(true, callback);
 
             // Move cue
             positionCue();
 
-            // Re-enable cue after specified delay
-            h0.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    UtilsTask.toggleCue(cue, true);
-                    logEvent("Cue toggled on", callback);
-                    randomRewardTimer(0);
-                }
-            }, 2000);
+//            // Re-enable cue after specified delay
+//            h0.postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    UtilsTask.toggleCue(cue, true);
+//                    logEvent("Cue toggled on", callback);
+//                    randomRewardTimer(0);
+//                }
+//            }, 2000);
 
         }
     };

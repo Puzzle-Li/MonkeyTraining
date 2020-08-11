@@ -53,6 +53,8 @@ public class TaskTrainingTwoShrinkingCue extends Task {
 
         loadTrialParams();
         assignObjects();
+
+        touchPrevention(view, callback);
     }
 
 

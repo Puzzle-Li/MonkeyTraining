@@ -44,6 +44,8 @@ public class TaskTrainingOneFullScreen extends Task {
         logEvent(TAG+" started", callback);
 
         assignObjects();
+
+        touchPrevention(view, callback);
     }
 
     private void assignObjects() {
